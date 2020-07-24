@@ -1,1 +1,36 @@
 /* TODO: Build layout for campuses page */
+.main-container {
+  display: flex;
+}
+
+#map{
+  height: 80vh;
+  position: sticky;
+  top: 0px;
+}
+
+.cards {
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+  flex-grow: 1;
+}
+
+@media (max-width: 1000px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
